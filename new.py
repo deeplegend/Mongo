@@ -15,7 +15,6 @@ if submit:
     document = {'name':name,'City':pas}
     inserted_document = collection.insert_one(document)
     st.success("Successfully Added")
-    client.close()
 
 for people in collection.find():
     st.write(people)
